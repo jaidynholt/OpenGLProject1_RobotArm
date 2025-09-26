@@ -48,10 +48,10 @@ int main() {
         
     // Create each robot arm piece by creating instances class meshObject
     meshObject robot;
-    robot.createChild("BaseModel.obj", glm::vec3(0.0f, 0.0f, 0.0f));
-    robot.children[0]->createChild("Arm1Model.obj", glm::vec3(0.0f, -2.0f, 0.0f));
-    robot.children[0]->children[0]->createChild("JointModel.obj", glm::vec3(0.0f, -2.0f, 0.0f));
-    robot.children[0]->children[0]->children[0]->createChild("Arm2Model.obj", glm::vec3(0.0f, -2.0f, 0.0f));
+    robot.createChild("../source/models/BaseModel.obj", glm::vec3(0.0f, 0.0f, 0.0f));
+    robot.children[0]->createChild("../source/models/Arm1Model.obj", glm::vec3(0.0f, -2.0f, 0.0f));
+    robot.children[0]->children[0]->createChild("../source/models/JointModel.obj", glm::vec3(0.0f, -2.0f, 0.0f));
+    robot.children[0]->children[0]->children[0]->createChild("../source/models/Arm2Model.obj", glm::vec3(0.0f, -2.0f, 0.0f));
 
     // transform the arms
     //meshObject::getMeshObjectById(2)->rotate(90.0f, glm::vec3(0.0f, 1.0f, 0.0f));   // rotate base 45 about y
@@ -177,7 +177,7 @@ int initWindow() {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // FOR MAC
 
     // create a window
-    window = glfwCreateWindow(windowWidth, windowHeight, "Project 1A (Jaidyn Holt, UFID: 6969-2801)", NULL, NULL);
+    window = glfwCreateWindow(windowWidth, windowHeight, "Project1: Robot Arm", NULL, NULL);
     if (window == NULL) {
         fprintf(stderr, "Failed to open GLFW window.\n");
         glfwTerminate();

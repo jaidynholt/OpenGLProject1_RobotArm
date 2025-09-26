@@ -105,7 +105,7 @@ gridObject::gridObject() { // Assign current value of nextId to id and increment
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);   // unbind EBO
 
     // Load and compile shaders
-    shaderProgram = LoadShaders("gridVertexShader.glsl", "gridFragmentShader.glsl");
+    shaderProgram = LoadShaders("../source/shaders/gridVertexShader.glsl", "../source/shaders/gridFragmentShader.glsl");
 
     // Initialize the model matrix
     modelMatrix = glm::mat4(1.0f);  // identity matrix

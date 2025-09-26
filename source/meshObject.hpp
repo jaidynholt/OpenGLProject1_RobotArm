@@ -6,10 +6,10 @@
 #include <GLFW/glfw3.h>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/quaternion.hpp>
-#include <common/shader.hpp>
 #include <map>
 #include <vector>
 #include <iostream>
+#include "OpenGLTutorial/shader.hpp"
 #include "light.hpp"
 
 class meshObject {

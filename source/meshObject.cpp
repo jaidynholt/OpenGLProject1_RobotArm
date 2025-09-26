@@ -95,11 +95,11 @@ meshObject::meshObject(const char* objFilePath) : id(nextId++) { // Assign curre
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);   // unbind EBO
     
     // Load and compile shaders
-    shaderProgram = LoadShaders("meshVertexShader.glsl", "meshFragmentShader.glsl");
-    pickingShaderProgram = LoadShaders("pickingvertexShader.glsl", "pickingFragmentShader.glsl");
+    shaderProgram = LoadShaders("../source/shaders/meshVertexShader.glsl", "../source/shaders/meshFragmentShader.glsl");
+    pickingShaderProgram = LoadShaders("../source/shaders/pickingvertexShader.glsl", "../source/shaders/pickingFragmentShader.glsl");
 
     // Load the texture
-    Texture = loadDDS("robotTextureImage.DDS");
+    Texture = loadDDS("../source/textures/robotTextureImage.DDS");
     // Bind our texture in Texture Unit 0
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, Texture);
@@ -282,7 +282,7 @@ glm::mat4 meshObject::getWorldSpaceMatrix() {
 
 void meshObject::shootProjectile() {
     // create new mesh
-    meshObject* projectile = this->createChild("JointModel.obj", glm::vec3(0.0f, 0.0f, 0.0f));
+    meshObject* projectile = this->createChild("../source/models/JointModel.obj", glm::vec3(0.0f, 0.0f, 0.0f));
 
     // get matrix to transform to tip, relative to this
     glm::mat4 TipMatrix = meshObject::getMeshObjectById(5)->getWorldSpaceMatrix();  // matrix to transform from world to tip
