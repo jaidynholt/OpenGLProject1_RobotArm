@@ -6,9 +6,12 @@
 #include <GLFW/glfw3.h>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/quaternion.hpp>
+#include <glm/gtc/type_ptr.hpp>
 #include <map>
 #include <vector>
 #include <iostream>
+#include "OpenGLTutorial/objloader.hpp"
+#include "OpenGLTutorial/texture.hpp"
 #include "OpenGLTutorial/shader.hpp"
 #include "light.hpp"
 

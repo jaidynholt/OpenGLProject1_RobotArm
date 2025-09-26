@@ -1,7 +1,4 @@
 #include "meshObject.hpp"
-#include <common/objloader.hpp>
-#include <common/texture.hpp>
-#include <glm/gtc/type_ptr.hpp>
 
 // Initialize static members
 int meshObject::nextId = 1;
