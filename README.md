@@ -14,9 +14,9 @@ The camera is fixed looking at the origin and moves around the origin in a spher
 
 ### Robot Movement
 The robot can move and rotate on the XZ plane.
-- **Select robot base to move**: `L mouse click` on it _or_ press `t` key
+- **Select robot base to move**: press `t` key
 - **Move robot base**: press `←` `→` `↑` `↓` keys
-- **Select robot base to rotate**: press `r` key
+- **Select robot base to rotate**: `L mouse click` on it _or_ press `r` key
 - **Rotate robot base**: press `←` `→` keys
 
 ### Arm Movement
