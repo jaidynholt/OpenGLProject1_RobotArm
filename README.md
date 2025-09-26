@@ -29,6 +29,9 @@ The two arm segments can rotate.
 The robot can shoot a projectile out of its arm (with force equal to its length) and teleport to where it lands.
 - **Shoot projectile**: press `s` key
 
+## Build
+The project can be built using [_CMake_](https://cmake.org/cmake/help/book/mastering-cmake/cmake/Help/guide/tutorial/#build-and-test).
+
 ## Libraries / External Resources
 The project uses the following libraries:
 - **GLFW**: Open Source library for OpenGL, OpenGL ES, and Vulkan for creating windows, contexts and surfaces, receiving input and events
